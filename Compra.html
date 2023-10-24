@@ -1,89 +1,98 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Compra de Relojes</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .navbar-brand {
-            font-weight: bold;
-        }
-
-        .navbar-nav a {
-            margin-right: 10px;
-        }
-
-        footer {
-            background-color: #f8f9fa;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-    <nav class="navbar navbar-expand navbar-light bg-light">
-        <a class="navbar-brand" href="#">Compra de Relojes</a>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="compra.html">Compra</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-            </li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="container-fluid bg-warning d-flex justify-content-center">
+        <p class="text-light mb-0 p-2 fs-6"> RELOJERIA MOISES</p>
+        </header>
+   <nav class="navbar navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <span class="text-primary fs-5 fw-bold"></span>
+        </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Compra.html">Compra</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Contacto.html">Contacto</a>
+          </li>
         </ul>
-    </nav>
-    
-
-    <div class="container mt-5">
-        <h2 class="mb-4">Relojes Comprados</h2>
-        <p>Aqui aparece una imagen del reloj a comprar</p>
+      </div>
     </div>
+  </nav>
+  
+ 
+  
+  <!-- Nosotros -->
+    <section>
+      <div class=" container w-50 mx-auto text-center" id="equipo">
+        <h1 class="mb-5 fs-2"><span class="text-primary">Soporte Tecnico</span></h1>
+        <!-- Carrousel -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active data-bs-interval-1000">
+        <img src="./img/M1.jfif" class="d-block img-fluid" alt="...">
+      </div>
+      <div class="carousel-item data-bs-interval-1000">
+        <img src="./img/M2.jfif" class="d-block img-fluid" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+        <p class="fs-4"> Llena el siguiente formulario con tus datos
+        </p>
+      </div>
 
-    <form class="row g-3 p-5">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Correo</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
+      <div class="mt-5 text-center container">
         
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">Dirreccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">Dirreccion 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">Estado</label>
-          <select id="inputState" class="form-select">
-            <option selected>Elige...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">Codigo postal</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Verificar
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <a href="index.html"><button class="btn btn-primary" >Enviar</button></a>
-        </div>
-      </form>
+              <form class="text-center">
+                <div class="p-1">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
+                </div>
+      
+                <div class="p-1">
+                  <label for="apellidos">Apellidos:</label>
+                  <input type="text" class="form-control" id="apellidos" placeholder="Ingrese sus apellidos">
+                </div>
+      
+                <div class="p-1">
+                  <label for="correo">Correo:</label>
+                  <input type="email" class="form-control" id="correo" placeholder="Ingrese su correo electrónico">
+                </div>
+      
+                <div class="p-1">
+                  <label for="telefono">Número de Teléfono:</label>
+                  <input type="text" class="form-control" id="telefono" placeholder="Ingrese su número de teléfono">
+                </div>
+      
+                <a href="index.html"><button class="btn btn-primary" >Enviar</button></a>
+              </form>
+            </div>
+          
+      
+    </section>
 
   <!-- Fondo curvo -->
 <section>
@@ -97,8 +106,6 @@
     <p class="fs-5 px-3 pt-3">Relojeria Moises &copy; Todos Los Derechos Reservados 2023</p>
   </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
